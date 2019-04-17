@@ -5,7 +5,7 @@
     font-style: normal;
     }
 body {
-   min-width: 100%;
+    max-width: 1800px;
     margin: 0 auto;
     position: relative;
 }
@@ -14,6 +14,9 @@ h1{
     font-size: 3.5rem;
     color: rgba(69, 69, 69, 255);
     text-align: center;
+}
+.purple{
+    color: #775b92;
 }
 /* header */
 header{
@@ -26,19 +29,29 @@ header{
 nav{
     display: flex;
     flex-direction: row;
+    position: relative;
+    margin-top: 4.5%;
+}
+.nav__logo__lang__wrap{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left: 11%;
 }
 .nav__logo a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-family: TitilliumWeb-Bold, sans-serif;
-    font-size: 30pt;
+    font-size: 2rem;
     color: rgba(133, 134, 136, 255);
     text-decoration: none;
+    font-weight: bold;
 }
 .nav__lang__item{
     list-style: none;
-    margin-left: 15px;
+    margin-right: 10%;
     position: relative;
 }
 .nav__lang__item::after{
@@ -46,7 +59,7 @@ nav{
     display: block;
     position: absolute;
     left: 100%;
-    margin-left: 5px;
+    margin-left: 10%;
     top: 3px;
 }
 .nav__lang__item:last-child::after{
@@ -54,15 +67,13 @@ nav{
 }
 .nav__lang__items{
     display: flex;
+    position: absolute;
+    left: -24%;
 }
 .nav__lang__items a{
     text-decoration: none;
 }
-.nav__logo__lang__wrap{
-    display: flex;
-    flex-direction: column;
-    /*margin-left: 20%;*/
-}
+
 .nav__lang__item__link:hover{
     color: #585454;
     font-weight: bold;
@@ -71,13 +82,20 @@ nav{
 }
 .nav__lang__item__link{
     font-family: TitilliumWeb-Bold, sans-serif;
-    font-size: 14pt;
+    font-size: 1rem;
     color: rgba(149, 149, 149, 255);
     align-items: flex-start;
 }
 .nav__menu__item{
     list-style: none;
-    margin-left: 10px;
+    margin-left: 5%;
+}
+.nav__login__item__img{
+    width: 60%;
+    height: 50%;
+}
+.nav__menu__item:nth-child(6){
+    margin-right: 10%;
 }
 .nav__menu__items{
     display: flex;
@@ -87,37 +105,35 @@ nav{
 }
 .nav__menu__item__link{
     font-family: TitilliumWeb-Bold, sans-serif;
-    font-size: 16pt;
+    font-size: 1rem;
     color: rgba(69, 69, 69, 255);
 }
 .nav__menu{
-    margin-left: auto;
-  
+    position: absolute;
+    right: 24%;
 }
 .nav__login__item{
     font-family: TitilliumWeb-Bold, sans-serif;
-    font-size: 16pt;
+    font-size: 1rem;
     font-weight: bold;
     color: #2e2b2b;
-    margin-left: 20px;
 }
 .nav__sign__item{
     font-family: TitilliumWeb-Bold, sans-serif;
-    font-size: 16pt;
+    font-size: 1rem;
     font-weight: bold;
     color: #e6dada;
 }
 /* main */
 main{
-    position: absolute;
-    top:0;
+    
 }
 .main__banner{
     position: relative;
 }
 .main__banner__h1{
     position: absolute;
-    top: 40%;
+    top: 11.9%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -125,7 +141,7 @@ main{
     width: 100%;
 }
 .main__banner__h1--sm{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     display: block;
 }
 .red{
@@ -137,7 +153,7 @@ button{
 }
 .main__banner__btn{
     position: absolute;
-    top: 60%;
+    top: 16.9%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -177,9 +193,9 @@ button{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 90%;
-    left: 10%;
-    right: 5%;
+    top: 28.7%;
+    left: 17%;
+    right: 10%;
 }
 .main__feat__privacy{
     display: flex;
@@ -203,9 +219,10 @@ button{
 }
 .main__feat__privacy__text{
     font-family: TitilliumWeb-Regular, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgba(149, 147, 147, 255);
     padding-right: 18%;
+    line-height: 1.5rem;
 }
 .main__feat__encrypt{
     display: flex;
@@ -229,9 +246,10 @@ button{
 }
 .main__feat__encrypt__text{
     font-family: TitilliumWeb-Regular, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgba(149, 147, 147, 255);
     padding-right: 18%;
+    line-height: 1.5rem;
 }
 .main__feat__anonym{
     display: flex;
@@ -255,7 +273,17 @@ button{
 }
 .main__feat__anonym__text{
     font-family: TitilliumWeb-Regular, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgba(149, 147, 147, 255);
     padding-right: 18%;
+    line-height: 1.5rem;
 }
+/*.main__feat__privacy:after{
+    content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 1px solid  #2e2b2b;
+  top: 0;
+  left: 100px;
+}*/
