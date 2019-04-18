@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>NeutronMail</title>
         <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -61,10 +62,10 @@
                 </div>
             </nav>
         </header>
-        
+        <div class="main__banner">
         <main>
-            <div class="main__banner">
-                <img class="main__banner__image" src="assets/background.png"/>
+            
+                <img class="main__banner__image" src="assets/newBack.png"/>
                 <div class="main__banner__h1">
                     <h1>Secure Email Communication
                         <span class="main__banner__h1--sm">Based in <span class="red">Somewhere</span></span>
@@ -128,12 +129,130 @@
                         </div>
                     </div>
                 </section>
-            </div>
-            
-            
+                <section class="main__phys-security">
+                    <div class="main__phys-security__wrap">
+                        <span class="main__phys-security__title">Physical Security</span>
+                        <span class="main__phys-security__subtitle">NeutronMail's infrastructure resides in Europe's 
+                            <span class="red">most secure</span> datacenter, underneath 1000 meters of solid rock.</span>
+                        <button type="submit" class="main__phys-security__btn__secur-feat">
+                            <span class="main__phys-security__btn__secur-feat--theme">Learn more about our security features</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="main__partners">
+                    <div class="main__partners__logo__img"></div>
+                </section>
+                <section class="main__quote">
+                    <div class="main__quote__slides">
+                        <div class="main__quote__slide--black"></div>
+                        <div class="main__quote__slide--grey"></div>
+                        <div class="main__quote__slide--grey"></div>
+                    </div>
+                    <span class="main__quote__text">A new email service being developed by a group from MIT and CERN promises to bring secure,
+                        encrypted email to the masses and keep sensitive information away from prying eyes.
+                        <span class="main__quote__author">— Boston Herald</span>
+                    </span>
+                </section>
+                <section class="main__devices">
+                    <span class="main__devices__title">Any device, anywhere</span>
+                    <p class="main__devices__text">The NeutronMail inbox is optimized for productivity. 
+                        Each detail within our secure email service is optimized to help you better read, organize, 
+                        and send email.</p>
+                    <div class="main__devices__stores">
+                        <a href="#">
+                            <div class="main__devices__app-store"></div>
+                        </a>
+                        <a href="#">
+                            <div class="main__devices__google-store"></div>
+                        </a>
+                    </div>
+                </section>
+                <section class="main__privacy">
+                    <div class="main__privacy__text">
+                        <span class="main__privacy__text__title">Privacy is a fundamental human right.
+                            <p class="main__privacy__text__subtitle">Your support helps us to protect privacy world-wide.</p>
+                        </span>
+                    </div>
+                    <button class="main__privacy__btn__upgrade" type="submit">
+                        <i class="far fa-cloud-upload fa-2x"></i>
+                        <span class="btn__text--white">Upgrade to Paid Plan</span>
+                    </button>
+                    <button class="main__privacy__btn__donate" type="submit">
+                        <span class="btn__text--white">Donate</span>
+                    </button>
+                </section>
+                <section class="main__privacy__sponsors">
+                    <div class="main__privacy__sponsors__text">Those, who help us secure your privacy</div>
+                    <div class="main__privacy__sponsors__logo"></div>
+                </section>
         </main>
+    </div>
         <footer>
-
+            <section class="footer__info__wrap">
+                <div class="footer__info">
+                    <span class="footer__info__mail">
+                        General: <span class="footer__info__mail-link">contact@neutronmail.ch</span><br>
+                        Media: <span class="footer__info__mail-link">media@neutronmail.ch</span><br>
+                        Security: <span class="footer__info__mail-link">security@neutronmail.ch</span><br>
+                    </span>
+                    <span class="footer__info__mail-support">
+                        For support inquiries, please visit
+                        <span class="footer__info__mail-link">neutronmail.com/support</span>
+                    </span>
+                </div>
+                <div class="footer__info-links">
+                <div class="footer__info-links__company">
+                    <span class="footer__info-links__company__title">Company</span>
+                    <ul class="footer__info-links__company__sub" dir="rtl">
+                        <li>Blog</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                        <li>Support</li>
+                        <li>Donate</li>
+                    </ul>
+                </div>
+                <div class="footer__info-links__legal">
+                    <span class="footer__info-links__legal__title">Legal</span>
+                    <ul class="footer__info-links__legal__sub" dir="rtl">
+                        <li>Imprint</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Transparency Report</li>
+                        <li>Report Abuse</li>
+                    </ul>
+                </div>
+                <div class="footer__info-links__neutron">
+                    <span class="footer__info-links__neutron__title">NeutronMail</span>
+                    <ul class="footer__info-links__neutron__sub" dir="rtl">
+                        <li>Pricing</li>
+                        <li>Security</li>
+                        <li>Shop</li>
+                        <li>Press/Media Kit</li>
+                        <li>Onion Site</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="footer__media">
+                <ul class="footer__media__items">
+                    <li class="footer__media__item">
+                        <a href="#" class="footer__media__item__link">Facebook</a>
+                    </li>
+                    <li class="footer__media__item">
+                        <a href="#" class="footer__media__item__link">Twitter</a>
+                    </li>
+                    <li class="footer__media__item">
+                        <a href="#" class="footer__media__item__link">Google+</a>
+                    </li>
+                    <li class="footer__media__item">
+                        <a href="#" class="footer__media__item__link">FeedbackForum</a>
+                    </li>
+                    <li class="footer__media__item">
+                            <a href="#" class="footer__media__item__link">Reddit</a>
+                        </li>
+                </ul>
+                <span class="footer__copyright">© 2017 Neutron Technologies AG. All Rights Reserved.</span>   
+            </section>
         </footer>
     </body>
 </html>

@@ -1,5 +1,5 @@
 @font-face{
-    font-family: TitilliumWeb-Bold;
+    font-family: "TitilliumWeb-Bold";
     src: url('./assets/titillium-web/TitilliumWeb-Bold.ttf'), format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -17,6 +17,9 @@ h1{
 }
 .purple{
     color: #775b92;
+}
+.red{
+    color: rgb(231, 71, 71);
 }
 /* header */
 header{
@@ -144,9 +147,7 @@ main{
     font-size: 1.9rem;
     display: block;
 }
-.red{
-    color: rgb(231, 71, 71);
-}
+
 button{
     border: none;
     display: inline-block;
@@ -287,3 +288,290 @@ button{
   top: 0;
   left: 100px;
 }*/
+/*section physical security*/
+.main__phys-security{
+    position: absolute;
+    top: 40.6%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.main__phys-security__wrap{
+    position: relative;
+    width: 79%;
+    height: 100%;
+}
+.main__phys-security__title{
+    display: block;
+    /*position: absolute;
+    top: 0;
+    right:0;*/
+    text-align: right;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    font-size: 3.5rem;
+    color: rgba(83, 83, 83, 255);
+}
+.main__phys-security__subtitle{
+    display: block;
+    /*position: absolute;
+    top: 20%;
+    right: 0;*/
+    text-align: right;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    font-size: 1.5rem;
+    color: rgba(149, 147, 147, 255);
+}
+.main__phys-security__btn__secur-feat{
+    background: url('./assets/btnPhysSec.png');
+    width: 334px;
+    height: 62px;
+    position: absolute;
+    left: 78%;
+    top:110%;
+}
+.main__phys-security__btn__secur-feat--theme{
+    font-family: TitilliumWeb-Regular, sans-serif;
+    font-size: 1rem;
+    color: rgba(103, 103, 103, 255);
+    text-align: center;
+}
+.main__partners__logo__img{
+    background: url('./assets/partners.png') no-repeat;
+    width: 943px;
+    height: 66px;
+    top:0;
+    position: absolute;
+    top: 46.2%;
+    left: 1%;
+}
+.main__quote{
+    position: absolute;
+    top: 50.3%;
+    left: 20.3%;
+    display: flex;
+    align-items: flex-start;
+}
+.main__quote__slide--black{
+    background: url('./assets/slideBlack.png');
+    width: 13px;
+    height: 13px;
+    margin-bottom: 11px;
+}
+.main__quote__slide--grey{
+    background: url('./assets/slideGrey.png');
+    width: 11px;
+    height: 11px;
+    margin-bottom: 11px;
+}
+.main__quote__text{
+    margin-top: -5px;
+    margin-left: 24px;
+    width: 525px;
+    height: 143px;
+    font-family: 'MalagaOT-RegItalic', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: rgba(16, 16, 16, 255);
+    text-align: left;
+}
+.main__quote__author{
+    display: block;
+    color: rgba(149, 147, 147, 255);
+    font-size: 1.1rem;
+}
+.main__devices{
+    position: absolute;
+    top: 61.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 435px;
+    text-align: right;
+}
+.main__devices__title{
+    font-family: TitilliumWeb-Regular, sans-serif;
+    font-size: 2.2rem;
+    color: rgba(83, 83, 83, 255);
+}
+.main__devices__text{
+    margin-top: 22px;;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    font-size: 1rem;
+    color: rgba(149, 147, 147, 255);
+}
+.main__devices__stores{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-column-gap: 13px;
+    margin-top: 31px;
+    margin-left: 64px;
+}
+.main__devices__app-store{
+    background: url('./assets/appStore.png') no-repeat;
+    height: 55px;
+}
+.main__devices__google-store{
+    background: url('./assets/googlePlay.png') no-repeat;
+    height: 55px;
+}
+.main__privacy{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 660px;
+    text-align: center;
+}
+.main__privacy__text{
+    text-align: center;
+}
+.main__privacy__text__title{
+    font-size: 2.2rem;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    color: rgba(83, 83, 83, 255);
+}
+.main__privacy__text__subtitle{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    color: rgba(149, 147, 147, 255);
+}
+.main__privacy__btn__upgrade{
+    background-image: url('./assets/Layer\ 8@1X.png'), url('./assets/upgradeBtn.png');
+    width: 246px;
+    height: 56px;
+    border-radius: 3em/3em;
+    box-shadow: 0 2px 24px -2px;  
+    margin-right: 48px; 
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+.main__privacy__btn__donate{
+    background: url('./assets/Layer\ 6@1X.png'), url('./assets/donateBtn.png');
+    width: 166px;
+    height: 56px;
+    border-radius: 3em/3em;
+    box-shadow: 0 2px 24px -2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn__text--white{
+    color: rgba(255, 255, 255, 255);
+}
+.main__privacy__sponsors{
+    position: absolute;
+    top: 83%;
+    left: 53%;
+    width: 974px;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+.main__privacy__sponsors__logo{
+    background: url('./assets/sponsors.png');
+    width: 974px;
+    height: 92px;
+}
+.main__privacy__sponsors__text{
+    font-size: 0.83rem;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    color: rgba(122, 122, 122, 255);
+    padding-right: 64px;
+}
+.footer__info__wrap{
+    display: flex;
+    position: absolute;
+    top: 89.6%;
+    left: 12.2%;
+    right: 15%;
+    font-size: 0.83rem;
+    font-family: TitilliumWeb-Regular, sans-serif;
+    color: rgba(92, 92, 92, 255);
+    line-height: 1.7rem;
+}
+.footer__info{
+    width: 215px;
+    height: 130px;
+}
+.footer__info__mail-link{
+    font-weight: bold;
+}
+.footer__info__mail-support{
+    display: block;
+    margin-top: 15px;
+}
+.footer__info-links{
+    display: flex;
+    margin-left: 374px;
+    text-align: right;
+}
+.footer__info-links__company{
+    width: 94px;
+    height: 152px;
+}
+.footer__info-links__legal{
+    margin-left: 76px;
+    width: 175px;
+    height: 152px;
+}
+.footer__info-links__neutron{
+    margin-left: 94px;
+    width: 108px;
+    height: 152px;
+}
+.footer__info-links__company__sub,
+.footer__info-links__legal__sub,
+.footer__info-links__neutron__sub
+{
+    padding: 0;
+}
+.footer__info-links__company__title,
+.footer__info-links__legal__title,
+.footer__info-links__neutron__title{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.footer__media__item{
+    list-style: none;
+    margin-right: 10%;
+    position: relative;
+}
+.footer__media__item::after{
+    content: '/';
+    display: block;
+    position: absolute;
+    left: 100%;
+    margin-left: 10%;
+    top: 3px;
+}
+.footer__media__item:last-child::after{
+    display: none;
+}
+.footer__media__items{
+    display: flex;
+    position: absolute;
+    left: 9%;
+    top: 96.8%;
+    
+}
+.footer__media__items a{
+    text-decoration: none;
+}
+
+.footer__media__item__link:hover{
+    color: #585454;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.footer__media__item__link{
+    font-family: TitilliumWeb-Bold, sans-serif;
+    font-size: 0.8rem;
+    color: rgba(149, 149, 149, 255);
+    align-items: flex-start;
+}
+.footer__copyright{
+    font-family: TitilliumWeb-Bold, sans-serif;
+    font-size: 0.8rem;
+    color: rgba(149, 149, 149, 255);
+    position: absolute;
+    top:98.4%;
+    left: 11%;
+}
