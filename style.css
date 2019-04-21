@@ -93,15 +93,13 @@ nav{
     list-style: none;
     margin-left: 5%;
 }
-.nav__login__item__img{
-    width: 60%;
-    height: 50%;
-}
 .nav__menu__item:nth-child(6){
-    margin-right: 10%;
+    margin-right: 11%;
 }
 .nav__menu__items{
     display: flex;
+    align-items: center;
+    margin-top: -5px;
 }
 .nav__menu__items a{
     text-decoration: none;
@@ -113,19 +111,28 @@ nav{
 }
 .nav__menu{
     position: absolute;
-    right: 24%;
+    right: 23%;
+}
+.nav__login__item__img{
+    width:15px;
+    height: 15px;
 }
 .nav__login__item{
+    display: flex;
     font-family: TitilliumWeb-Bold, sans-serif;
     font-size: 1rem;
     font-weight: bold;
     color: #2e2b2b;
 }
-.nav__sign__item{
+.nav__sign__item__btn{
+    background-image: url('./assets/signGradient.png'), url('./assets/sign.png');
+    width: 97px;
+    height: 43px;
+    border-radius: 6em/3em;
+    box-shadow: 0 2px 24px -2px;
     font-family: TitilliumWeb-Bold, sans-serif;
     font-size: 1rem;
-    font-weight: bold;
-    color: #e6dada;
+    font-weight: bold;  
 }
 /* main */
 main{
@@ -133,6 +140,31 @@ main{
 }
 .main__banner{
     position: relative;
+}
+.main__banner__account-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10.5%;
+    right: 1.7%;
+}
+.main__banner__account-icons__google{
+    background: url('./assets/google.png') no-repeat;
+    width: 19px;
+    height: 18px;
+    margin-bottom: 20px;
+}
+.main__banner__account-icons__facebook{
+    background: url('./assets/facebook.png')no-repeat;
+    width: 19px;
+    height: 18px;
+    margin-bottom: 20px;
+}
+.main__banner__account-icons__twitter{
+    background: url('./assets/twitter.png')no-repeat;
+    width: 17px;
+    height: 17px;
 }
 .main__banner__h1{
     position: absolute;
@@ -203,6 +235,15 @@ button{
     flex-direction: column;
     flex: 1;
 }
+/*.main__feat__privacy:after{
+    content: '';
+  width: 0;
+  height: 210px;
+  position: absolute;
+  border: 1px solid  rgba(149, 147, 147, 255);
+  top: -70%;
+  left: 30%;
+}*/
 .main__feat__privacy__title__image{
     display: flex;
     align-items: center;
@@ -230,6 +271,15 @@ button{
     flex-direction: column;
     flex: 1;
 }
+/*.main__feat__encrypt:after{
+    content: '';
+  width: 0;
+  height: 433px;
+  position: absolute;
+  border: 1px solid  rgba(149, 147, 147, 255);
+  top: 11px;
+  left: 840px;
+}*/
 .main__feat__encrypt__title__image{
     display: flex;
     align-items: center;
@@ -279,15 +329,7 @@ button{
     padding-right: 18%;
     line-height: 1.5rem;
 }
-/*.main__feat__privacy:after{
-    content: '';
-  width: 0;
-  height: 100%;
-  position: absolute;
-  border: 1px solid  #2e2b2b;
-  top: 0;
-  left: 100px;
-}*/
+
 /*section physical security*/
 .main__phys-security{
     position: absolute;
@@ -333,12 +375,16 @@ button{
     font-size: 1rem;
     color: rgba(103, 103, 103, 255);
     text-align: center;
+   
 }
 .main__partners__logo__img{
     background: url('./assets/partners.png') no-repeat;
-    width: 943px;
-    height: 66px;
-    top:0;
+    display: block;
+width: 100%;
+height: 100%;
+
+    /*width: 100%;
+    height: 100%;*/
     position: absolute;
     top: 46.2%;
     left: 1%;
@@ -415,7 +461,7 @@ button{
 }
 .main__privacy{
     position: absolute;
-    top: 75%;
+    top: 75.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 660px;
@@ -424,12 +470,13 @@ button{
 .main__privacy__text{
     text-align: center;
 }
-.main__privacy__text__title{
+.main__privacy__text__title {
     font-size: 2.2rem;
     font-family: TitilliumWeb-Regular, sans-serif;
     color: rgba(83, 83, 83, 255);
 }
-.main__privacy__text__subtitle{
+.main__privacy__text__subtitle {
+    display: block;
     margin-top: 10px;
     font-size: 1.8rem;
     font-family: TitilliumWeb-Regular, sans-serif;
@@ -444,6 +491,7 @@ button{
     margin-right: 48px; 
    font-size: 1.2rem;
    font-weight: bold;
+   margin-top: 29px;
 }
 .main__privacy__btn__donate{
     background: url('./assets/Layer\ 6@1X.png'), url('./assets/donateBtn.png');
@@ -488,8 +536,10 @@ button{
     line-height: 1.7rem;
 }
 .footer__info{
-    width: 215px;
-    height: 130px;
+    /*width: 215px;
+    height: 130px;*/
+    min-width: 215px;
+    min-height: 130px;
 }
 .footer__info__mail-link{
     font-weight: bold;
@@ -498,9 +548,14 @@ button{
     display: block;
     margin-top: 15px;
 }
+.footer__info-links__wrap{
+    position: relative;
+    width: 100%;
+}
 .footer__info-links{
+    position: absolute;
     display: flex;
-    margin-left: 374px;
+    right:16%;
     text-align: right;
 }
 .footer__info-links__company{
@@ -550,12 +605,10 @@ button{
     position: absolute;
     left: 9%;
     top: 96.8%;
-    
 }
 .footer__media__items a{
     text-decoration: none;
 }
-
 .footer__media__item__link:hover{
     color: #585454;
     font-weight: bold;
@@ -574,4 +627,114 @@ button{
     position: absolute;
     top:98.4%;
     left: 11%;
+}
+@media (max-width: 1546px){
+    .main__devices{
+        left: 45%;
+    }
+}
+@media (max-width: 1490px){
+    .main__partners__logo__img{
+        display: none;
+    }
+}
+@media (max-width: 1250px){
+    .main__banner__btn{
+        top: 20%;
+    }
+    .main__phys-security{
+        top: 44%;
+        left: 38%;
+    }
+    .main__phys-security__title{
+        font-size: 2.7vw;
+        text-align: center;
+    }
+    .main__phys-security__subtitle{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .main__phys-security__btn__secur-feat{
+        left: 111%;
+        top:18%;
+    }
+    .main__feat{
+        top: 26%;
+        left: 15%;
+        right: 7%;
+    }
+    .main__quote {
+        top: 51%;
+        left: 5%;
+    }
+    .main__quote__text{
+        font-size: 1.8vw;
+    }
+    .main__devices {
+        top: 64%;
+        left: 24%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    .main__feat__privacy__main-title,
+    .main__feat__encrypt__main-title,
+    .main__feat__anonym__main-title {
+        font-size: 2vw;
+    }
+    .main__feat__encrypt__image {
+        width: 32%;
+    }
+    .main__devices__title {
+        font-size: 2.7vw;
+    }
+    .main__privacy{
+        top: 77%;
+    }
+    .main__privacy__text__title {
+        font-size: 2.5vw;
+    }
+    .main__privacy__text__subtitle {
+        font-size: 2vw;
+    }
+    .main__privacy__btn__upgrade {
+        width: 180px;
+        height: 41px;
+        font-size: 1.5vw;
+        margin-top: 26px;
+    }
+    .main__privacy__btn__donate {
+        width: 135px;
+        height: 41px;
+        font-size: 1.5vw;
+        margin-top: 5px;
+    }
+    .main__privacy__sponsors {
+        display: none;
+    }
+    .footer__info__wrap {
+        top: 85%;
+        right: 5%;
+        left: 5%;
+    }
+    .footer__info-links__wrap {
+        right: -10%;
+    }
+    .footer__media__items {
+        padding: 0;
+        top: 96%;
+        left: 5%;
+    }
+    .footer__copyright {
+        top: 98.5%;
+        left: 5%;
+    }
+
+}
+@media (max-width: 520px) {
+    .main__feat {
+        flex-direction: column;
+    }
 }

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>NeutronMail</title>
         <link rel="stylesheet" href="./style.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -51,12 +50,15 @@
                             <a href="#" class="nav__menu__item__link">Donate</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="" class="nav__login__item">
-                                <img src="./assets/sign-in-alt-solid.svg" alt="" class="nav__login__item">
-                                Log in</a>
+                            <a href="#" class="nav__login__item">
+                                <img src="./assets/sign-in-alt-solid.svg" alt="" class="nav__login__item__img">
+                                <span>Login</span>
+                            </a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="" class="nav__sign__item">Sign up</a>
+                            <button type="submit" class="nav__sign__item__btn">
+                                <span class="btn__text--white">Sign Up</span>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -64,8 +66,12 @@
         </header>
         <div class="main__banner">
         <main>
-            
-                <img class="main__banner__image" src="assets/newBack.png"/>
+                <div class="main__banner__account-icons">
+                    <div class="main__banner__account-icons__google"></div>
+                    <div class="main__banner__account-icons__facebook"></div>
+                    <div class="main__banner__account-icons__twitter"></div>
+                </div>
+                <img class="main__banner__image" src="assets/newBack.png" alt="banner"/>
                 <div class="main__banner__h1">
                     <h1>Secure Email Communication
                         <span class="main__banner__h1--sm">Based in <span class="red">Somewhere</span></span>
@@ -76,17 +82,17 @@
                         <span class="main__banner__btn__acc--theme">Create account</span>
                     </button>
                     <button type="submit" class="main__banner__btn__apple">
-                        <img class="main__banner__btn__apple--theme" src="assets/apple.png"/>
+                        <img class="main__banner__btn__apple--theme" src="assets/apple.png" alt="apple"/>
                     </button>
                     <button type="submit" class="main__banner__btn__google">
-                        <img class="main__banner__btn__google--theme" src="assets/Layer 9@1X.png"/>
+                        <img class="main__banner__btn__google--theme" src="assets/googlepl.png" alt="google play"/>
                     </button>
                 </div>
                 <section class="main__feat">
                     <div class="main__feat__privacy">
                         <div class="main__feat__privacy__title__image">
                             <div class="main__feat__privacy__image">
-                                <img src="./assets/privacy.png"/>
+                                <img src="./assets/privacy.png" alt="privacy"/>
                             </div>
                             <div class="main__feat__privacy__title">
                                 <span class="main__feat__privacy__main-title">Swiss Privacy</span>
@@ -101,7 +107,7 @@
                     <div class="main__feat__encrypt">
                         <div class="main__feat__encrypt__title__image">
                             <div class="main__feat__encrypt__image">
-                                <img src="./assets/encryption.png"/>
+                                <img src="./assets/encryption.png" alt="encryption"/>
                             </div>
                             <div class="main__feat__encrypt__title">
                                 <span class="main__feat__encrypt__main-title">Double Encryption</span>
@@ -116,7 +122,7 @@
                     <div class="main__feat__anonym">
                         <div class="main__feat__anonym__title__image">
                             <div class="main__feat__anonym__image">
-                                <img src="./assets/anon.png"/>
+                                <img src="./assets/anon.png" alt="anonymous"/>
                             </div>
                             <div class="main__feat__anonym__title">
                                 <span class="main__feat__anonym__main-title">Anonymous Email</span>
@@ -170,7 +176,7 @@
                 <section class="main__privacy">
                     <div class="main__privacy__text">
                         <span class="main__privacy__text__title">Privacy is a fundamental human right.
-                            <p class="main__privacy__text__subtitle">Your support helps us to protect privacy world-wide.</p>
+                            <span class="main__privacy__text__subtitle">Your support helps us to protect privacy world-wide.</span>
                         </span>
                     </div>
                     <button class="main__privacy__btn__upgrade" type="submit">
@@ -196,10 +202,11 @@
                         Security: <span class="footer__info__mail-link">security@neutronmail.ch</span><br>
                     </span>
                     <span class="footer__info__mail-support">
-                        For support inquiries, please visit
+                        For support inquiries, please visit<br>
                         <span class="footer__info__mail-link">neutronmail.com/support</span>
                     </span>
                 </div>
+                <div class="footer__info-links__wrap">
                 <div class="footer__info-links">
                 <div class="footer__info-links__company">
                     <span class="footer__info-links__company__title">Company</span>
@@ -232,6 +239,7 @@
                     </ul>
                 </div>
                 </div>
+            </div>
             </section>
             <section class="footer__media">
                 <ul class="footer__media__items">
